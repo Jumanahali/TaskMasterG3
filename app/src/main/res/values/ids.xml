@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="timeicon" type="id" />
+    <item name="LocIcon" type="id" />
+    <item name="workericon" type="id" />
+    <item name="amounticon" type="id" />
+    <item name="timeicon2" type="id" />
+    <item name="LocIcon2" type="id" />
+    <item name="workericon2" type="id" />
+    <item name="amounticon2" type="id" />
+    <item name="main" type="id" />
+    <item name="locicon" type="id" />
+</resources>

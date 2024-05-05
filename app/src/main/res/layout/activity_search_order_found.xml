@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".searchOrderFound">
+    <TextView
+        android:id="@+id/titleOfpage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Reservations:"
+        android:fontFamily="@font/poppins_semibold"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginBottom="16dp" />
+
+    <SearchView
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/searchview_background"
+        android:queryHint="Washbasins"
+        android:iconifiedByDefault="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleOfpage"
+        android:queryBackground="@android:color/transparent"/>
+
+    <LinearLayout
+        android:id="@+id/row1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="399dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/search">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/Subcategory1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/Subcategory1Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toEndOf="@+id/Subcategory1image"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Washbasins"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/staus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Subcategory1Name"
+                    android:layout_marginStart="6dp"
+                    android:layout_toEndOf="@+id/Subcategory1image"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Accepted"
+                    android:textColor="@color/green"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/Subcategory1image"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/washbasins" />
+
+                <ImageView
+                    android:id="@id/locIcon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginLeft="100dp"
+                    android:layout_below="@+id/staus"
+                    android:layout_marginEnd="224dp"
+                    android:layout_marginRight="70dp"
+                    android:src="@drawable/baseline_add_location_alt_24" />
+
+
+
+                <EditText
+                    android:id="@+id/loc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/WorkerInfo"
+                    android:layout_marginStart="42dp"
+                    android:layout_toEndOf="@+id/Subcategory1image"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textColor="@color/black"
+                    android:textSize="21sp"
+                    android:text="KSU"/>
+
+
+                <ImageView
+                    android:id="@id/timeicon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="45dp"
+                    android:layout_marginLeft="200dp"
+                    android:layout_below="@+id/staus"
+                    android:layout_marginEnd="60dp"
+                    android:layout_marginRight="70dp"
+                    android:src="@drawable/baseline_access_time_filled_24" />
+
+                <EditText
+                    android:id="@+id/textClock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/amount"
+                    android:layout_marginStart="205dp"
+                    android:layout_toEndOf="@+id/Subcategory1image"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="3:00"
+                    android:textColor="@color/black"
+                    android:textSize="21sp" />
+
+                <ImageView
+                    android:id="@id/workericon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="100dp"
+                    android:layout_below="@+id/Subcategory1image"
+                    android:layout_marginEnd="320dp"
+                    android:layout_marginRight="70dp"
+                    android:src="@drawable/baseline_contact_phone_24" />
+
+                <TextView
+                    android:id="@+id/WorkerInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Subcategory1image"
+                    android:layout_marginStart="60dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Saad 0555555555"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@id/amounticon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="45dp"
+                    android:layout_marginLeft="400dp"
+                    android:layout_below="@+id/Subcategory1image"
+                    android:layout_marginEnd="60dp"
+                    android:layout_marginRight="70dp"
+                    android:src="@drawable/baseline_attach_money_24" />
+
+
+                <TextView
+                    android:id="@+id/amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Subcategory1image"
+                    android:layout_marginStart="320dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="150"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/Rate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/WorkerInfo"
+                    android:layout_marginStart="45dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Rate: "
+                    android:textColor="@color/black"
+                    android:textSize="25sp" />
+
+                <EditText
+                    android:id="@+id/editTextText3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="-2dp"
+                    android:layout_toEndOf="@+id/Rate"
+                    android:layout_marginBottom="10dp"
+                    android:ems="10"
+                    android:layout_below="@+id/WorkerInfo"
+                    android:hint="OUT OF 5"
+                    android:inputType="text" />
+
+                <Button
+                    android:id="@+id/CancleOreder"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="310dp"
+                    android:background="@drawable/delete"/>
+
+                <Button
+                    android:id="@+id/editButton"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="265dp"
+                    android:background="@drawable/edit"/>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/windowBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/bottom_navigation_menu" />
+</androidx.constraintlayout.widget.ConstraintLayout>

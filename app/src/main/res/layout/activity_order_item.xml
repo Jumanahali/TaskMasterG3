@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:foregroundTint="#8D1717"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="20dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+
+        <ImageView
+            android:id="@+id/Subcategory1image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/untitled_design__1_" />
+
+        <TextView
+            android:id="@+id/orderName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="1dp"
+            android:layout_toEndOf="@id/Subcategory1image"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/orderStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/orderName"
+            android:layout_marginStart="6dp"
+            android:layout_toEndOf="@id/Subcategory1image"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="@color/green"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/locIcon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/orderStatus"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="213dp"
+            android:src="@drawable/baseline_add_location_alt_24" />
+
+        <TextView
+            android:id="@+id/loc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/WorkerInfo"
+            android:layout_marginStart="49dp"
+            android:layout_marginBottom="13dp"
+            android:layout_toEndOf="@+id/Subcategory1image"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/timeicon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@id/orderStatus"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="45dp"
+            android:layout_marginEnd="60dp"
+            android:src="@drawable/baseline_access_time_filled_24" />
+
+        <TextView
+            android:id="@+id/textClock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/amount"
+            android:layout_marginStart="200dp"
+            android:layout_marginBottom="12dp"
+            android:layout_toEndOf="@+id/Subcategory1image"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+
+        <ImageView
+            android:id="@id/workericon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/Subcategory1image"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="317dp"
+            android:src="@drawable/baseline_contact_phone_24" />
+
+        <TextView
+            android:id="@+id/WorkerInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Subcategory1image"
+            android:layout_marginStart="47dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@id/amounticon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/Subcategory1image"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="45dp"
+            android:layout_marginEnd="60dp"
+            android:src="@drawable/baseline_attach_money_24" />
+
+        <TextView
+            android:id="@+id/amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Subcategory1image"
+            android:layout_marginStart="300dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/Rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/WorkerInfo"
+            android:layout_marginStart="45dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Rate: "
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/rating"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_below="@+id/WorkerInfo"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="-1dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toEndOf="@+id/Rate"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/editButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="320dp"
+            android:background="@android:drawable/ic_menu_edit"
+             />
+
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
